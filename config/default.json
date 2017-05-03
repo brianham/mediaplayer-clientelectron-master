@@ -1,0 +1,49 @@
+{
+    "openDevTools": "true",
+    "socket-endpoint": "http://localhost:4001",
+    "currentView": "cuppingRoomDoors",
+    "views": [{
+        "name": "cuppingRoomDoors",
+        "windowWidth": 1920,
+        "windowHeight": 1080,
+        "positionX": 0,
+        "positionY": 0,
+        "hideCursor":  true,
+        "isAlwaysOnTop": false }, {
+
+        "name": "LEDpipes",
+        "windowWidth": 1920,
+        "windowHeight": 1080,
+        "positionX": 0,
+        "positionY": 0,
+        "hideCursor":  true,
+        "isAlwaysOnTop": false }, {
+            
+        "name": "marqueeWall",
+        "windowWidth": 1920,
+        "windowHeight": 1080,
+        "positionX": 0,
+        "positionY": 0,
+        "hideCursor":  true,
+        "isAlwaysOnTop": false }       
+    ],
+    "logging": {
+        "bunyanLogs": {
+            "electron": {
+                "name": "Electron",
+                "level": "trace",
+                "streams": [
+                {
+                    "type": "stdout"
+                },
+                {
+                    "type": "rotating-file",
+                    "path": "C:/Src/SBUX/logs/electron.log",
+                    "period": "1h",
+                    "count": 24,
+                    "isMainLog": true
+                }]
+            }
+        }    
+    }    
+}
